@@ -1,7 +1,13 @@
+import addSpace from "./addSpace";
+
 function listFollowers(followerNames: string[]): string {
-  // complete function
-  // use array destructuring, for practice!
-  return "fails test right now";
+  const spacedList = followerNames.map(addSpace)
+  return (
+    `Followed by${spacedList[0]},${spacedList[1]} and others`
+  )
 }
 
 export default listFollowers;
+
+
+
